@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+<head>
+</head>
+<body>  
+    {% block content %}
+
+    <div class="center">    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class = "carousel_item"> Did you know <b>72%</b> of patients are misdiagnosed with Pneumonia upon readmission to the same hospital? </div>
+          </div>
+          <div class="carousel-item">
+            <div class = "carousel_item"> In less privelaged hospitals, pneumonia misdiagnosis can be up to 40% </div>
+        </div>
+          <div class="carousel-item">
+            <div class = "carousel_item"> Pneumonia can be difficult to distinguish from other condititions which have similar symptoms which makes it difficult to diagnose. </div>
+        </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+   
+    <br/>
+        
+    <div class="center">
+            <div class="UploadFile1">
+            <form method="post" action="/" enctype="multipart/form-data">
+                <p>  <input type="file" name="files" webkitdirectory multiple/> </p>
+                <p>  <input type="submit" name="submit" class="btn btn-success btn-lg" value="UPLOAD"/> </p>
+              </form>  
+              
+            <form method='POST' action-"/">
+                <button class="btn btn-secondary btn-lg" type="submit" value="MODEL" name="GetModel">Train a Model </button>
+                
+            </form>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="UploadFile2">
+            <form method="post" action="/" enctype="multipart/form-data">
+                <p>  <input type="file" name="files2" webkitdirectory multiple/> </p>
+                <p>  <input type="submit" name="submit" class="btn btn-success btn-lg" value="UPLOAD"/> </p>
+              </form>
+
+
+            <form method='POST' action-"/">
+                <button class="btn btn-secondary btn-lg" type="submit" value="RESULTS" name="GetResults" >Make Prediction</button>
+
+            </form>
+            </div>
+
+            
+       
+            <br>
+            <div>
+                <a href="{{url_for('download_file')}}"><b>Download Results</b></a>
+            </div>
+
+        </div>
+
+
+
+
+
+        {% endblock %}
+    </div>
+<body>
+  
+ 
+
+head

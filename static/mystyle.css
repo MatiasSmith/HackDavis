@@ -1,0 +1,126 @@
+
+
+h6 {
+    color: red;
+}
+
+h2 {
+
+    color: #343a40;
+    /* margin-left: 400px; */
+
+}
+
+
+body {
+    background-image: linear-gradient(rgba(161, 175, 231, 0.7), rgba(23, 47, 140, 0.7)), url("website_images/background1.jpg");
+    min-height: 100vh; 
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+  }
+  
+.btn-secondary {
+    background-color: #343a40;
+    outline-color: 343a40;
+}
+
+.form-control {
+    color: purple;
+}
+
+.card-body {
+    background-color: #82a0d1;
+}
+
+
+
+
+a:link {
+    color: darkgray;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #202123;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #5a6268;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #5a6268;
+  }
+
+  .carousel_item {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 550px;
+      height: 55px;
+      border-radius: 25px;
+      border-style: solid;
+      border-color: whitesmoke;
+      background-color: whitesmoke;
+      opacity: 0.75;
+  }
+
+  .team_member {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* width: 400px;
+    height: 200px;
+    border-radius: 25px;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+    opacity: 0.75; */
+
+
+  }
+
+  img {
+      border: 3px solid #343a40;
+      border-radius: 10px;
+  }
+
+  .bio {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 450px;
+    font-size: 17px;
+    color: rgb(226, 213, 213);
+
+  }
+
+  .UploadFile1 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 350px;
+      height: 170px;
+      border-radius: 25px;
+      border-style: solid;
+      border-color:#c4d8ed
+      
+  }
+
+  .UploadFile2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 170px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color:#c4d8ed
+    
+    
+  }
