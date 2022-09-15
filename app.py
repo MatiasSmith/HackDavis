@@ -217,13 +217,6 @@ def about():
 
     if request.method == "POST":
         
-        # if request.form.get('action1') == "RUN":
-        #     # session.permanent = True
-        #     user = request.form["action1"]
-        #     session["user"] = user
-        #     session["user2"] = "BOB"
-        #     return redirect(url_for("user"))
-        
         if request.form.get("About") == "ABOUT":
             about = request.form["About"]
             session["about"] = about
@@ -256,13 +249,6 @@ def team():
 
     if request.method == "POST":
         
-        # if request.form.get('action1') == "RUN":
-        #     # session.permanent = True
-        #     user = request.form["action1"]
-        #     session["user"] = user
-        #     session["user2"] = "BOB"
-        #     return redirect(url_for("user"))
-        
         if request.form.get("About") == "ABOUT":
             about = request.form["About"]
             session["about"] = about
@@ -279,8 +265,6 @@ def team():
             session["team"] = about
             return redirect(url_for("team"))
 
-
-
     else:
         #If user has already logged in and is in session
         if "user" in session:
@@ -289,49 +273,7 @@ def team():
         return render_template("team.html", name="Team")
 
 
-
-#@app.route("/<usr>/<usr2>")
-#def user(usr, usr2):
-#    return f"<h1>{usr}</h1><h2>{usr2}</h2>"
-
-#Page path ~/user
-# @app.route("/user")
-# def user():
-#     #Check if the user was in session
-#     if "user" in session:        
-#         usr = test()
-#         #usr = session["user"]
-#         usr2 = session["user2"]
-#         #return f"<h1>{usr}</h1><h2>{usr2}</h2>"
-#         return render_template("user.html", user=usr, user2=usr2)
-
-#     #Else if theres no user in my session
-#     else:
-#         flash("You are not logged in!")
-#         return redirect(url_for("/"))
-
-# @app.route("/logout")
-# def logout():
-#     #Only show you were logged out if you had been logged in
-#     if "user" in session:
-#         user = session["user"]
-#         flash(f"You have logged out successfully {user}", "info")
-#     session.pop("user", None)
-#     return redirect(url_for("/"))
-
 if __name__ == '__main__':
     app.run(debug=True)
     
 
-
-
-
-
-
-
-#   {% with messages = get_flashed_messages() %}
-#         {% if messages %}
-#             {% for msg in messages %}
-#                 <p>{{msg}}</p>
-#             {% endfor %}
-#         {% endif %}
